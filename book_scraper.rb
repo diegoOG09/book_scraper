@@ -3,7 +3,7 @@ require 'pg'
 require 'nokogiri'
 require 'open-uri'
 
-DB = Sequel.connect('postgres://diego:030199@localhost/books_db')
+DB = Sequel.connect('postgres://usuario:password@localhost/books_db')
 
 DB.create_table? :books do
   primary_key :id
