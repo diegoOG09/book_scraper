@@ -46,7 +46,7 @@ Sigue estos pasos para instalar y configurar el proyecto:
    DB = Sequel.connect('postgres://usuario:password@localhost/books_db')
 
 4. Ejecuta el script. Incluí 2 scripts, uno llamado book_scraper.rb y otro book_scraper_cache.rb:
-   ![2024-12-01_15-13](https://github.com/user-attachments/assets/ea09d94a-9b08-4497-b646-eb6df3301de4)
+   ![2024-12-01_15-13](https://github.com/user-attachments/assets/9bfd3525-f0de-404c-820a-fa039cf6c719)
 
    ```bash
    ruby book_scraper.rb
