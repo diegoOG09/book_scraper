@@ -5,7 +5,7 @@ require 'open-uri'
 require 'rspec'
 
 # Configuración de la base de datos de prueba
-DB = Sequel.connect('postgres://diego:030199@localhost/books_db_test')
+DB = Sequel.connect('postgres://usuario:password@localhost/books_db_test')
 
 # Crea la tabla de libros si no existe (para las pruebas)
 DB.create_table? :books do
@@ -19,9 +19,7 @@ end
 class Book < Sequel::Model(:books)
 end
 
-# Simulación de los métodos de extracción
 describe 'Book Scraper' do
-  # Definimos una caché simple
   CACHE = {}
 
   before(:each) do
@@ -29,7 +27,7 @@ describe 'Book Scraper' do
   end
 
   after(:each) do
-    Book.dataset.delete # Se eliminan todos los registros
+    Book.dataset.delete # Se eliminan todos los registros despues de la prueba
     CACHE.clear         # Se limpia la caché después de cada prueba
   end
 
