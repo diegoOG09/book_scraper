@@ -51,6 +51,7 @@ Sigue estos pasos para instalar y configurar el proyecto:
    ```bash
    ruby book_scraper.rb
    ruby book_scraper_cache.rb
+  Utilizar la opción 1 para llenar la base de datos con los libros.
 
 6. Ejecuta las pruebas:
    ```bash
