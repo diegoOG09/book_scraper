@@ -54,6 +54,8 @@ Sigue estos pasos para instalar y configurar el proyecto:
    ruby book_scraper_cache.rb
   Utilizar la opción 1 para llenar la base de datos con los libros.
 
+5. Crea una base de datos de prueba, en mi caso se llama "book_db_test".
+
 6. Ejecuta las pruebas:
    ```bash
    rspec spec/book_scraper_spec.rb
